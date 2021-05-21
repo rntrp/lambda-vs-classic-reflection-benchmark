@@ -64,7 +64,7 @@ public class LambdaVsReflectionBenchmark {
         }
     }
 
-    @State(Scope.Benchmark)
+    @State(Scope.Thread)
     public static class CommonState {
         /**
          * @see BenchPojo#field
@@ -72,18 +72,26 @@ public class LambdaVsReflectionBenchmark {
         static final String FIELD_NAME = "field";
 
         private static final SplittableRandom RAND = new SplittableRandom();
-        private static final int NUM_CHARS = 8;
-        final BenchPojo pojo = new BenchPojo("_initial");
-        final String newValue = new String(RAND.ints(97, 123).limit(NUM_CHARS).toArray(), 0, NUM_CHARS);
+
+        BenchPojo pojo;
+        String newValue;
+
+        @Setup(Level.Trial)
+        public void setup() {
+            pojo = new BenchPojo("_initial");
+            // prevent any possible optimization of setter method execution, if using the same string all over again:
+            int numChars = 8, origin = 97, bound = 123; // random string [a-z]{8}
+            newValue = new String(RAND.ints(origin, bound).limit(numChars).toArray(), 0, numChars);
+        }
     }
 
-    @State(Scope.Benchmark)
+    @State(Scope.Thread)
     public static class ReflectionState extends CommonState {
         private final Method getter = ReflectionUtils.getGetter(BenchPojo.class, FIELD_NAME);
         private final Method setter = ReflectionUtils.getSetter(BenchPojo.class, FIELD_NAME);
     }
 
-    @State(Scope.Benchmark)
+    @State(Scope.Thread)
     public static class LambdaState extends CommonState {
         private final Function<Object, Object> getter = LambdaUtils.createGetter(BenchPojo.class, FIELD_NAME);
         private final BiConsumer<Object, Object> setter = LambdaUtils.createSetter(BenchPojo.class, FIELD_NAME);
