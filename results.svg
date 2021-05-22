@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1653 993" width="1653" height="993">
+  <defs>
+    <clipPath id="a">
+      <path d="M1294 216h1653v993H1294z"/>
+    </clipPath>
+    <clipPath id="c">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="d">
+      <path d="M1524 387h1348v612H1524z"/>
+    </clipPath>
+    <clipPath id="e">
+      <path d="M1524 387h1348v612H1524z"/>
+    </clipPath>
+    <clipPath id="f">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="b">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="g">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="h">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="i">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="j">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="k">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="l">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="m">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="n">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="o">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="p">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="q">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="r">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="s">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="t">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="u">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="v">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="w">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="x">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+    <clipPath id="y">
+      <path d="M1295 217h1650v990H1295z"/>
+    </clipPath>
+  </defs>
+  <rect width="100%" height="100%" fill="#FFF"/>
+  <g clip-path="url(#a)" transform="translate(-1294 -216)">
+    <g clip-path="url(#b)" transform="translate(2)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1499 1061)">
+        0.0
+      </text>
+    </g>
+    <g clip-path="url(#c)">
+      <path fill="none" stroke="#D9D9D9" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.4" d="M1660 388v609m134-609v609m134-609v609m135-609v609m134-609v609m135-609v609m134-609v609m134-609v609m135-609v609m134-609v609"/>
+    </g>
+    <g clip-path="url(#d)">
+      <path fill="#4472C4" d="M1893 948h-368v-53h368zm64-203h-432v-53h432zm379-203h-811v-53h811z"/>
+    </g>
+    <g clip-path="url(#e)">
+      <path fill="#ED7D31" d="M1952 895h-427v-53h427zm65-203h-492v-53h492zm589-203H1525v-53h1081z"/>
+    </g>
+    <g clip-path="url(#f)">
+      <path fill="none" stroke="#D9D9D9" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.4" d="M1525 997V388"/>
+    </g>
+    <g clip-path="url(#g)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1633 1061)">
+        0.1
+      </text>
+    </g>
+    <g clip-path="url(#h)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1768 1061)">
+        0.2
+      </text>
+    </g>
+    <g clip-path="url(#i)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1902 1061)">
+        0.3
+      </text>
+    </g>
+    <g clip-path="url(#j)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2036 1061)">
+        0.4
+      </text>
+    </g>
+    <g clip-path="url(#k)" transform="translate(2)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2171 1061)">
+        0.5
+      </text>
+    </g>
+    <g clip-path="url(#l)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2305 1061)">
+        0.6
+      </text>
+    </g>
+    <g clip-path="url(#m)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2439 1061)">
+        0.7
+      </text>
+    </g>
+    <g clip-path="url(#n)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2574 1061)">
+        0.8
+      </text>
+    </g>
+    <g clip-path="url(#o)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2708 1061)">
+        0.9
+      </text>
+    </g>
+    <g clip-path="url(#p)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2843 1061)">
+        1.0
+      </text>
+    </g>
+    <g clip-path="url(#q)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1389 906)">
+        direct
+      </text>
+    </g>
+    <g clip-path="url(#r)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1361 703)">
+        lambda
+      </text>
+    </g>
+    <g clip-path="url(#s)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(1325 500)">
+        reflection
+      </text>
+    </g>
+    <g clip-path="url(#t)">
+      <text fill="#595959" font-family="sans-serif" font-size="64" font-weight="400" transform="translate(1604 313)">
+        lambda vs reflection method invocation
+      </text>
+    </g>
+    <g clip-path="url(#u)" transform="translate(-20 32)">
+      <path fill="#ED7D31" d="M1979 1130h23v23h-23z"/>
+    </g>
+    <g clip-path="url(#v)" transform="translate(-20 32)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2011 1153)">
+        setter
+      </text>
+    </g>
+    <g clip-path="url(#w)" transform="translate(20 32)">
+      <path fill="#4472C4" d="M2143 1130h23v23h-23z"/>
+    </g>
+    <g clip-path="url(#x)" transform="translate(20 32)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2175 1153)">
+        getter
+      </text>
+    </g>
+    <path fill="none" stroke="#D9D9D9" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.4" d="M1296 218h1650v990H1296z"/>
+    <g clip-path="url(#y)" transform="translate(-15 -31)">
+      <text fill="#595959" font-family="sans-serif" font-size="41" font-weight="400" transform="translate(2011 1153)">
+        µs / 1000 ops
+      </text>
+    </g>
+  </g>
+</svg>
