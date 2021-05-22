@@ -69,10 +69,14 @@ We finally come to the point. Both approaches add some performance overhead to m
 ## Results
 ```
 Benchmark                                          Mode   Cnt  Score   Error  Units
-LambdaVsReflectionBenchmark.benchDirectGetter      avgt  1000  0,274 ± 0,002  us/op
-LambdaVsReflectionBenchmark.benchDirectSetter      avgt  1000  0,318 ± 0,001  us/op
-LambdaVsReflectionBenchmark.benchLambdaGetter      avgt  1000  0,322 ± 0,001  us/op
-LambdaVsReflectionBenchmark.benchLambdaSetter      avgt  1000  0,366 ± 0,002  us/op
-LambdaVsReflectionBenchmark.benchReflectionGetter  avgt  1000  0,604 ± 0,004  us/op
-LambdaVsReflectionBenchmark.benchReflectionSetter  avgt  1000  0,805 ± 0,005  us/op
+LambdaVsReflectionBenchmark.benchDirectGetter      avgt  1000  0.274 ± 0.002  us/op
+LambdaVsReflectionBenchmark.benchDirectSetter      avgt  1000  0.318 ± 0.001  us/op
+LambdaVsReflectionBenchmark.benchLambdaGetter      avgt  1000  0.322 ± 0.001  us/op
+LambdaVsReflectionBenchmark.benchLambdaSetter      avgt  1000  0.366 ± 0.002  us/op
+LambdaVsReflectionBenchmark.benchReflectionGetter  avgt  1000  0.604 ± 0.004  us/op
+LambdaVsReflectionBenchmark.benchReflectionSetter  avgt  1000  0.805 ± 0.005  us/op
 ```
+Values are in microseconds per 1000 operations. *Lower is better.*
+<p align="center">
+  <img src="./results.svg" width="50%">
+</p>
