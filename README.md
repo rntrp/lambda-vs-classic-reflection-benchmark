@@ -74,21 +74,25 @@ That's why we expect it to perform differently (i.e. faster) than good old refle
 ```java
 import java.lang.function.*;
 import java.lang.invoke.*;
+
 // ...
+
 java.beans.PropertyDescriptor pd = new java.beans.PropertyDescriptor("str", MyBean.class);
 MethodHandles.Lookup lookup = MethodHandles.lookup();
+
 // Getter proxy:
-MethodHandle getterHandle = lookup.unreflect(pd.getReadMethod());
-MethodType getterType = MethodType.methodType(Function.class);
-MethodType getterSignature = MethodType.methodType(Object.class, Object.class);
-CallSite getterCS = LambdaMetafactory.metafactory(lookup, "apply", getterType, getterSignature, getterHandle, getterHandle.type());
-Function<Object, Object> getterProxy = (Function<Object, Object>) getterCS.getTarget().invokeExact();
+MethodHandle gHandle = lookup.unreflect(pd.getReadMethod());
+MethodType gType = MethodType.methodType(Function.class);
+MethodType gSignature = MethodType.methodType(Object.class, Object.class);
+CallSite gCallSite = LambdaMetafactory.metafactory(lookup, "apply", gType, gSignature, gHandle, gHandle.type());
+Function<Object, Object> getterProxy = (Function<Object, Object>) gCallSite.getTarget().invokeExact();
+
 // Setter proxy:
-MethodHandle setterHandle = lookup.unreflect(pd.getWriteMethod());
-MethodType setterType = MethodType.methodType(BiConsumer.class);
-MethodType setterSignature = MethodType.methodType(Void.TYPE, Object.class, Object.class);
-CallSite setterCS = LambdaMetafactory.metafactory(lookup, "accept", setterType, setterSignature, setterHandle, setterHandle.type());
-BiConsumer<Object, Object> setterProxy = (BiConsumer<Object, Object>) setterCS.getTarget().invokeExact();
+MethodHandle sHandle = lookup.unreflect(pd.getWriteMethod());
+MethodType sType = MethodType.methodType(BiConsumer.class);
+MethodType sSignature = MethodType.methodType(Void.TYPE, Object.class, Object.class);
+CallSite sCallSite = LambdaMetafactory.metafactory(lookup, "accept", sType, sSignature, sHandle, sHandle.type());
+BiConsumer<Object, Object> setterProxy = (BiConsumer<Object, Object>) sCallSite.getTarget().invokeExact();
 ```
 That's a pretty bulky construction up there, but we can simply pack this code in some (static) method and reuse it.
 And, obviously, method/lambda invocation is absolutely identical to the example we've shown above.
