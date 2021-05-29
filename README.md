@@ -80,3 +80,12 @@ Values are in microseconds per 1000 operations. *Lower is better.*
 <p align="center">
   <img src="./results.svg" width="50%">
 </p>
+
+### Hardware Specs
+```
+        CPU: Intel Core i5-7440HQ 2.80 GHz, 4 cores, HT off
+        RAM: DDR4, 32 GByte, 1200 MHz
+         OS: Windows 10 Home x64 20H2 19042.985
+        JVM: JDK 1.8.0_292, OpenJDK 64-Bit Server VM, 25.292-b10
+JVM options: <none>
+```
