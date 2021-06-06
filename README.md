@@ -77,11 +77,11 @@ Method invocation is also pretty simple:
 String str = (String) getterProxy.apply(myBean);
 setterProxy.accept(myBean, "new value");
 ```
-Such lambda proxy adds an extra layer to method stack, but it must be performant enough, since lambdas are heavily used within new Java APIs.
-We also can cache these lambda references, e.g. in a map, but we need to do it manually for each method call.
+Such lambda proxy adds an extra layer to the method stack, but it must be performant enough, since lambdas are heavily used within the new Java APIs.
+We can also cache these lambda references, for instance, in a map with the property names as keys.
 
 By now you may already noticed, that we cheated by hardcoding the method calls into our lambda functions.
-We didn't access the getter and the setter by the property name, hence we need to know the properties at compile time, which is often infeasible.
+We didn't access the getter and the setter by the property name, hence we need to know the properties at compile time, which&mdash;as we already said before&mdash;is often infeasible.
 It's no good, if we can't create our lambda functions for properties, which are first known at runtime.
 If only there was some way to create lambdas dynamically...
 
