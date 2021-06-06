@@ -16,8 +16,27 @@ public class MyBean implements java.io.Serializable {
   public void setStr(String str) { this.str = str; }
 }
 ```
-The challenge is that we mostly don't know at compile time, which properties exactly will be needed by templates and configuration, since both of them will not be resolved until runtime.
-In the following we will present two major approaches to find and invoke the `getStr()` and `setStr(String)` methods dynamically at runtime.
+The challenge is that getter/setter method calls are not known until runtime.
+Applications obviously read configuration files and templates on startup or on demand.
+If your bean properties are known at compile time, you may end up with something like a huge switch statement for each property:
+```java
+static void setProperty(MyBean myBean, String property, String value) {
+  switch(property) {
+    case "str":
+      myBean.setStr(value);
+      break;
+    // and so on for further properties
+  }
+}
+```
+If our data model counts hundreds or thousands of diffrent beans, such approach may quickly become cumbersome.
+In that case we would need to write similar methods for every bean class in our project.
+This can be somewhat mitigated by using code generation, still a controversial issue on its own.
+However, the whole solution won't work, if we are writing a library and obviously have no idea, what other developers' beans will look like.
+Since getter and setter method naming follows a well defined convention, a better approach is to reconstruct the method name from the property name and find the corresponding getter or setter reflectively.
+As a result we get a reference to the method, which can be later used to invoke it.
+Java provides more than one way to perform a method call using method references.
+In the following we will present two major approaches of invoking the `getStr()` and `setStr(String)` methods dynamically at runtime.
 
 ### Getters and Setters via Reflection
 The package `java.beans` provides useful utilities for finding getters and setters by property name using Java reflection API.
