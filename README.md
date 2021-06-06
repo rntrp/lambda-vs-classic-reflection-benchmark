@@ -89,7 +89,7 @@ Well, there is.
 `java.lang.invoke.LambdaMetafactory` is able to create such proxies from method references.
 We still need the `java.lang.reflect.Method` references to getters and setters, but this time they are only used for finding the methods, not their invocation.
 Note that `LambdaMetafactory` doesn't "wrap" the reflective method call we've seen above, but creates a lambda function which directly calls the proxied method.
-That's why we expect it to perform differently (i.e. faster) than good old reflection API.
+That's why we expect it to perform differently (i.e. faster) than the good old reflection API.
 ```java
 import java.lang.function.*;
 import java.lang.invoke.*;
